@@ -9,18 +9,18 @@ import AppbarComponent from './assets/components/Appbar';
 function App() {
 
   return (
-    <SafeAreaProvider >
+    
     <PaperProvider>
         
    
 
     <AppbarComponent />
-      <HomeScreen />
+    
       <NavigationTabs />
   
     
     </PaperProvider>
-     </SafeAreaProvider>
+   
     
   );
 }

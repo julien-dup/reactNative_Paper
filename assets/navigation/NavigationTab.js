@@ -1,11 +1,15 @@
+// le fichier s'appelle navigationTabs mais il devrait s'appeler bottomNavigation cf react native paper
+
 import React from 'react'
 import { BottomNavigation, Text } from 'react-native-paper';
 import CardComponent from '../components/Card';
+import HomeScreen from '../screen/HomeScreen';
 
 
 
 const MusicRoute = () => {<Text>Home</Text>;
  return (
+   
  <CardComponent />
  )
  }
