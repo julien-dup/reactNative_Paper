@@ -1,30 +1,34 @@
 import React from 'react'
-import { BottomNavigation, Card, Text } from 'react-native-paper';
+import { BottomNavigation, Text } from 'react-native-paper';
 import CardComponent from '../components/Card';
 
 
 
-const MusicRoute = () => {<Text>Music</Text>;
+const MusicRoute = () => {<Text>Home</Text>;
  return (
  <CardComponent />
  )
  }
-const AlbumsRoute = () => <Text>Albums</Text>;
+const AlbumsRoute = () => <Text>histo</Text>;
 
-const RecentsRoute = () => <Text>Recents</Text>;
+const RecentsRoute = () => <Text>ajout</Text>;
+
+const HammerRoute = () => <Text>parametre</Text>;
 
 const NavigationTabs = () => {
   const [index, setIndex] = React.useState(0);
   const [routes] = React.useState([
-    { key: 'music', title: 'Music', icon: 'queue-music' },
-    { key: 'albums', title: 'Albums', icon: 'album' },
-    { key: 'recents', title: 'Recents', icon: 'history' },
+    { key: 'home', title: 'home', icon: 'home' },
+    { key: 'histo', title: 'histo', icon: 'album' },
+    { key: 'ajout', title: 'ajout', icon: 'history' },
+    { key: 'parametre', title: 'parametre', icon: 'cog' },
   ]);
 
   const renderScene = BottomNavigation.SceneMap({
-    music: MusicRoute,
-    albums: AlbumsRoute,
-    recents: RecentsRoute,
+    home: MusicRoute,
+    histo: AlbumsRoute,
+    ajout: RecentsRoute,
+    parametre: HammerRoute,
   });
 
 
